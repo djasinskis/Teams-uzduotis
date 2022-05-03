@@ -10,6 +10,7 @@ var countries = [
 
 for(var x of countries){
     var average = (x.area * 1000000) / x.population
-    console.log(`Šalis: ${x.country}, joje gyvena: ${x.population} gyventojų. Valstybės plotas: ${x.area} km², plotas tenkantis vienam gyventojui: ${average.toFixed(2)} m² `)
+    var popl = x.population / 1000000
+    console.log(`Šalis: ${x.country}, joje gyvena: ${popl.toFixed(2)} mln. gyventojų. Valstybės plotas: ${x.area} km², plotas tenkantis vienam gyventojui: ${average.toFixed(2)} m² `)
     console.log("=================")
 }
